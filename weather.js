@@ -7,7 +7,6 @@ function getWeatherReport(city) {
   fetch(`https://api.maas2.apollorion.com/`, requestOptions)
     .then((response) => response.json())
     .then((result) => {
-      console.log(result);
       document.getElementById("terrestrial_date").innerHTML =
         result.terrestrial_date;
       document.getElementById(
